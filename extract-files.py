@@ -217,6 +217,9 @@ blob_fixups: blob_fixups_user_type = {
             'libui-xiaomi.so'
         ),
 
+    'system_ext/lib64/libwfdcommonutils.so': blob_fixup()
+        .remove_needed('libheif.so'),
+
     'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
         .add_needed('libgui_shim.so'),
 
