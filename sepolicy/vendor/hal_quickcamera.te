@@ -1,7 +1,7 @@
 type hal_quickcamera_service, hal_service_type, protected_service, service_manager_type;
 
-allow hal_quickcamera platform_app:binder { call transfer };
-allow hal_quickcamera platform_app:fd *;
+allow hal_quickcamera platform_app_36:binder { call transfer };
+allow hal_quickcamera platform_app_36:fd *;
 allow hal_quickcamera priv_app:binder { call transfer };
 allow hal_quickcamera priv_app:fd *;
 allow hal_quickcamera system_app:binder { call transfer };

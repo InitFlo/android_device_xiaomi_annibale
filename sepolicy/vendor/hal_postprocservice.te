@@ -1,7 +1,7 @@
 type hal_postprocservice_service, hal_service_type, protected_service, service_manager_type;
 
-allow hal_postprocservice platform_app:binder { call transfer };
-allow hal_postprocservice platform_app:fd *;
+allow hal_postprocservice platform_app_36:binder { call transfer };
+allow hal_postprocservice platform_app_36:fd *;
 allow hal_postprocservice priv_app:binder { call transfer };
 allow hal_postprocservice priv_app:fd *;
 allow hal_postprocservice system_app:binder { call transfer };

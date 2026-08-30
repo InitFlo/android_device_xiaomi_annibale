@@ -13,9 +13,9 @@ allow hal_fingerprint_default vendor_fingerprint_data_file_fpdump:dir create_dir
 allow hal_fingerprint_default vendor_fingerprint_data_file_fpdump:file create_file_perms;
 allow hal_fingerprint_default vendor_hal_perf_hwservice:hwservice_manager find;
 allow hal_fingerprint_default vendor_hal_perf_default:binder call;
-allow hal_fingerprint_default platform_app:binder { call transfer };
-allow hal_fingerprint_default platform_app:binder transfer;
-allow hal_fingerprint_default platform_app:fd *;
+allow hal_fingerprint_default platform_app_36:binder { call transfer };
+allow hal_fingerprint_default platform_app_36:binder transfer;
+allow hal_fingerprint_default platform_app_36:fd *;
 allow hal_fingerprint_default system_app:binder { call transfer };
 allow hal_fingerprint_default system_app:binder transfer;
 allow hal_fingerprint_default system_app:fd *;
