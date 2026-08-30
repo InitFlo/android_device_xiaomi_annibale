@@ -85,7 +85,6 @@ blob_fixups: blob_fixups_user_type = {
         'odm/lib64/libsimulation.so',
         'vendor/bin/hw/vendor.qti.hardware.display.composer-service',
         'vendor/bin/poweropt-service',
-        'vendor/lib64/hw/libaudioeffecthal.qti.so',
         'vendor/lib64/libaodoptfeature.so',
         'vendor/lib64/libapengine.so',
         'vendor/lib64/libaudiocloudctrl.so',
@@ -240,6 +239,15 @@ blob_fixups: blob_fixups_user_type = {
             'libbluetooth_audio_session_aidl_prebuilt.so'
         ),
 
+    (
+        'vendor/lib64/hw/android.hardware.bluetooth.audio_sw.so',
+        'vendor/lib64/libaudio_aidl_conversion_common_ndk_prebuilt.so',
+    ): blob_fixup ()
+        .replace_needed(
+            'android.media.audio.common.types-V6-ndk.so',
+            'android.media.audio.common.types-V3-ndk.so'
+        ),
+
     'vendor/lib64/hw/libaudiocorehal.qti.so': blob_fixup()
         .replace_needed(
             'android.hardware.audio.core.sounddose-V1-ndk.so',
@@ -250,11 +258,25 @@ blob_fixups: blob_fixups_user_type = {
             'libaudio_aidl_conversion_common_ndk_prebuilt.so'
         ),
 
+    'vendor/lib64/hw/libaudioeffecthal.qti.so': blob_fixup()
+        .replace_needed(
+            'android.media.audio.common.types-V6-ndk.so',
+            'android.media.audio.common.types-V3-ndk.so'
+        )
+        .replace_needed(
+            'libtinyxml2.so',
+            'libtinyxml2-v36.so'
+        ),
+
     'vendor/lib64/libaudioserviceexampleimpl.so': blob_fixup()
         .add_needed('libaudioutils_shim.so')
         .replace_needed(
             'android.hardware.bluetooth.audio-impl.so',
             'android.hardware.bluetooth.audio-impl_prebuilt.so'
+        )
+        .replace_needed(
+            'android.media.audio.common.types-V6-ndk.so',
+            'android.media.audio.common.types-V3-ndk.so'
         )
         .replace_needed(
             'libbluetooth_audio_session_aidl.so',
