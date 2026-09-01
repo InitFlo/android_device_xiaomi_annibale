@@ -1,4 +1,4 @@
-# Unpinned blobs from annibale-user 16 BP2A.250605.031.A3 OS3.0.8.0.WPKMIXM release-keys
+# Unpinned blobs from annibale-user 16 BP2A.250605.031.A3 OS3.0.301.0.WPKMIXM release-keys
 
 # ACDB
 odm/etc/acdbdata/Mi/sia91xx/Mi_acdb_cal_sia.acdb
@@ -768,6 +768,7 @@ odm/lib64/libc++_shared.so
 odm/lib64/libcalculator.so;FIX_SONAME
 odm/lib64/libcamera_scene.so
 odm/lib64/libcameraheif.so
+odm/lib64/libcameraopt_stub.so
 odm/lib64/libcamlog.so
 odm/lib64/libcamxcommonutils.so
 odm/lib64/libcamxcoreutils.so
@@ -2053,6 +2054,7 @@ odm/etc/camera/cameradfx_config.json
 odm/etc/camera/cameraopt.json
 odm/etc/camera/cameraopt_perf.json
 odm/etc/camera/cameraopt_reclaim.json
+odm/etc/camera/cameraopt_reservemem.json
 odm/etc/camera/camerascene.json
 odm/etc/camera/camxoverridesettings.txt
 odm/etc/camera/com.xiaomi.dcal.w_07.t_01.golden
@@ -2841,7 +2843,7 @@ vendor/lib64/rfs/dsp/libvpt_action_recognition.so
 vendor/lib64/rfs/dsp/libworker_pool.so
 
 # Euicc
-mi_ext/product/priv-app/EuiccGoogle_arm64/EuiccGoogle_arm64.apk:product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
+mi_ext/product/priv-app/EuiccGoogle/EuiccGoogle.apk:product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
 
 # Fingerprint
 odm/etc/vintf/manifest/fod-aidl.xml
