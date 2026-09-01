@@ -242,6 +242,13 @@ blob_fixups: blob_fixups_user_type = {
             'libwfdhdcpservice_annibale.so'
         ),
 
+    (
+        'vendor/etc/seccomp_policy/qesdksec.policy',
+        'vendor/etc/seccomp_policy/qsap_qapeservice.policy',
+        'vendor/etc/seccomp_policy/syshealthmon.policy'
+    ): blob_fixup()
+        .add_line_if_missing('lseek: 1'),
+
     'vendor/lib64/android.hardware.bluetooth.audio-impl_prebuilt.so': blob_fixup()
         .replace_needed(
             'libbluetooth_audio_session_aidl.so',
