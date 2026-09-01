@@ -265,6 +265,18 @@ vendor/etc/vintf/manifest/cacert-saidl.xml
 vendor/lib64/libcacertclient.so
 vendor/lib64/vendor.qti.hardware.cacertaidlservice-V1-ndk.so
 
+# Camera from CN OS3.0.303.0.WPKCNXM
+odm/lib64/camera/aon_front_ii_1.pb;SYMLINK=vendor/lib64/camera/aon_front_ii_1.pb|b9f190dca8705933e1a04e249e7a79585514fcfb
+odm/lib64/camera/aon_rear_ii_2.pb;SYMLINK=vendor/lib64/camera/aon_rear_ii_2.pb|a9de223f69dbc23a34f7d9fbf471c8a37c2d6f7b
+odm/lib64/camera/com.qti.sensormodule.annibale_aac_ov08f_ultra_ii.bin|524a53cbc39796b906ee7f1f926513e7546475f5
+odm/lib64/camera/com.qti.sensormodule.annibale_aac_ov20b40_front_ii.bin|6567e656c9a2dbc12c4768bba4fea7368c7fafc8
+odm/lib64/camera/com.qti.sensormodule.annibale_ofilm_ovx8000_wide_ii.bin|12dd495fd7ccac514922fc9313ada652ba071eb2
+odm/lib64/camera/com.qti.sensormodule.annibale_sunny_ov50m_tele3x_ii.bin|6926a4a9fc1459cb7f6fab876889195c919d96db
+odm/lib64/camera/com.qti.tuned.annibale_aac_ov08f_ultra_ii.bin|bc17c073e3a139f0d1912cf50a855c201fa7cb97
+odm/lib64/camera/com.qti.tuned.annibale_aac_ov20b40_front_ii.bin|d9ec6bb7561205c73c81942062dc58da5521a8b4
+odm/lib64/camera/com.qti.tuned.annibale_ofilm_ovx8000_wide_ii.bin|a0d87a8fc9333e188452f3fa78f6090393229c41
+odm/lib64/camera/com.qti.tuned.annibale_sunny_ov50m_tele3x_ii.bin|803a294929312b881582240ccbfda76ac3ee16c5
+
 # Camera
 odm/bin/hw/misensor_camera
 odm/bin/hw/vendor.qti.camera.provider-service_64
