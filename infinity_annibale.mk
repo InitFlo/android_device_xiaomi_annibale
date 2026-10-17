@@ -10,8 +10,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from generic device
 $(call inherit-product, device/xiaomi/annibale/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Infinity stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Inherit from the MiuiCamera setup
 $(call inherit-product-if-exists, device/xiaomi/annibale-miuicamera/device.mk)
@@ -19,13 +19,22 @@ $(call inherit-product-if-exists, device/xiaomi/annibale-miuicamera/device.mk)
 # Lineage stuff
 TARGET_EXCLUDES_AUDIOFX := true
 
-PRODUCT_NAME := lineage_annibale
+PRODUCT_NAME := infinity_annibale
 PRODUCT_DEVICE := annibale
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 2510DPC44G
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Maintainer Name
+INFINITY_MAINTAINER := "InitFlo"
+
+# Whether the device supports Fingerprint On Display
+TARGET_HAS_UDFPS := true
+
+# Whether Including Google Apps
+WITH_GAPPS := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="annibale-user 16 BP2A.250605.031.A3 OS3.0.301.0.WPKMIXM release-keys" \

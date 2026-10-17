@@ -5,6 +5,9 @@ persist.vendor.cne.feature=1
 ro.product.marketname=POCO F8 Pro
 ro.product.mod_device=annibale_global
 
+ro.infinity.soc=Snapdragon 8 Elite
+ro.infinity.camera=50MP + 50MP + 8MP
+
 # HWUI
 debug.hwui.skia_atrace_enabled=false
 
